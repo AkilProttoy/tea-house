@@ -20,6 +20,9 @@
         extend: {
           colors: {
             clifford: '#da373d',
+          },
+          fontFamily: {
+            manrope:['Manrope', 'sans-serif'],
           }
         }
       }
@@ -28,7 +31,7 @@
   
     <title>Tea House</title>
 </head>
-<body>
+<body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px-20"> 
        <!-- Header Section -->
       <header class="lg:flex pt-10 mb-20">
@@ -230,8 +233,8 @@
               <img class="mb-8" src="images/cup.png" alt="">
              
               <div class="flex items-center gap-2">
-                <h4>Ready to get started</h4>
-                <button class="bg-gradient-to-r from-orange-500 to-red-500 rounded-lg text-white font-bold ">Get Started</button>
+                <h4>Ready to get started?</h4>
+                <button class="bg-gradient-to-r from-orange-500 to-red-500 rounded-lg text-white font-semi-bold p-2 ">Get Started</button>
               </div>
               </div>
               <!-- Links -->
@@ -290,13 +293,14 @@
                 <!-- 4th Column  -->
                 <div>
                   
-                  <h3>Subscribe to our newsletter</h3>
-                  <div class="flex flex-col space-y-2">
+                  <h3 class="text-lg font-semibold">Subscribe to our newsletter</h3>
+                  <div class="flex flex-col space-y-2 mt-2">
                   <div >
                     <input placeholder="Email Address " type="text" class="bg-transparent border-b-2 border-black w-4/6">
-                  <i class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"></i>
+                    <i class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"></i>
                   </div>
-                  <div class="flex w-2/5 justify-between">
+                  
+                  <div class="flex w-2/5 justify-between gap-4" >
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
